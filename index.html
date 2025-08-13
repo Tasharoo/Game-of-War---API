@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <h1>Game of War!</h1>
+    <p>
+      The aim of the game is to score a higher card than the computer. <br />
+      To start a new game, click the "Shuffle Deck" button, You will have to
+      wait for the deck to be ready. <br />
+
+      then click the "Draw a card" button to draw a card. <br />
+      To reset the score, click "reset Score" and that will reload the page for
+      another game.<br />
+    </p>
+    <button type="button" id="new-deck">Shuffle Deck</button>
+    <button type="submit" class="reset-btn" id="reset-btn">Reset Score</button>
+    <p id="card-info" class="card-info"></p>
+    <div id="cards">
+      <div class="card-placeholder" id="computer"></div>
+      <div class="card-placeholder" id="me"></div>
+    </div>
+    <h2 id="final-winner"></h2>
+    <button type="button" id="new-card">Draw a card</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
